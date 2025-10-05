@@ -17,7 +17,8 @@ defmodule WebrtcLiveViewWeb.Router do
   scope "/", WebrtcLiveViewWeb do
     pipe_through :browser
 
-    live "/", Live.EchoLive, :index
+    live "/", Live.Raw, :index
+    live "/countours", Live.Contours, :index
     live "/face-detection", Live.FaceDetectionLive, :index
   end
 
