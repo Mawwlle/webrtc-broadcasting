@@ -1,0 +1,13 @@
+defmodule WebrtcLiveViewWeb.PageController do
+  use WebrtcLiveViewWeb, :controller
+
+  def home(conn, _params) do
+    # The home page is often custom made,
+    # so skip the default app layout.
+    render(conn, :home, layout: false)
+  end
+
+  def face_detection(conn, _params) do
+    render(conn, :home, layout: false)
+  end
+end
